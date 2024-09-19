@@ -1,45 +1,46 @@
+Charles Williams, Jaden Castle, Amy Phillips
 Document 1:
 
-Line 0 No doctype set 
-Language set in head instead of in <html> tag Line 1
-Line 7 No </head> tag 
-Line 9 No closing </h1> tag 
-Line 11 Missing opening <p> tag 
-Line 19 Closing </li> tag with no opening tag 
-Line 24 Ended ordered list with </ul> unordered tag 
-Line 26 No closing </p> tag 
-Line 27 Image.jpg incorrectly labeled as "Image.png" 
-Line 27 no alt tag on image
-Line 29 Closing </img> tag where closing </a> tag is needed 
-Line 38 Missing closing </td> tag 
-Line 45 No closing </table> tag 
-Line 46 Source instead of src in img tag 
-Line 46 Error.jpg incorrectly labeled as "error.jpeg" 
-Line 48 Strikethrough Text does not have strikethrough 
-Line 49 No <p> tag on strikethrough paragraph
-Line 50 Background color property not properly called
-Line 54 Comment not closed
-Line 56 Need closing </a> tag on
-Line 58 </em> tag outside </p> 
-Line 60 need <dt> tag instead of <li> tag
-Line 61 need <dd> tag instead of <li> tag
-Line 69 Underlined text not underlined
-Line 64 <h3> tag following <h2> 
+Error 1: Line 0 No doctype set 
+Error 2: Language set in head instead of in <html> tag Line 1
+Error 3: Line 7 No </head> tag 
+Error 4: Line 9 No closing </h1> tag 
+Error 5: Line 11 Missing opening <p> tag 
+Error 6: Line 19 Closing </li> tag with no opening tag 
+Error 7: Line 24 Ended ordered list with </ul> unordered tag 
+Error 8: Line 26 No closing </p> tag 
+Error 9: Line 27 Image.jpg incorrectly labeled as "Image.png" 
+Error 10: Line 27 no alt tag on image
+Error 11: Line 29 Closing </img> tag where closing </a> tag is needed 
+Error 12: Line 38 Missing closing </td> tag 
+Error 13: Line 45 No closing </table> tag 
+Error 14: Line 46 Source instead of src in img tag 
+Error 15: Line 46 Error.jpg incorrectly labeled as "error.jpeg" 
+Error 16: Line 48 Strikethrough Text does not have strikethrough 
+Error 17: Line 49 No <p> tag on strikethrough paragraph
+Error 18: Line 50 Background color property not properly called
+Error 19: Line 54 Comment not closed
+Error 20: Line 56 Need closing </a> tag on
+Error 21: Line 58 </em> tag outside </p> 
+Error 22: Line 60 need <dt> tag instead of <li> tag
+Error 23: Line 61 need <dd> tag instead of <li> tag
+Error 24: Line 69 Underlined text not underlined
+Error 25: Line 64 <h3> tag following <h2> 
 
 Document 2:
 
-Line 4: <h1> body text in the <head> section
-After Line 4: No closing </head> tag 
-Line 5: <body should be notated as <body>
-Line 6: <html> unnecessary, established in line 1
-Line 7: <div> is unestablished, no corresponding css and no closure </div>
-Line 8: <p> tag is not closed at the end of the line with </p>
-Line 8: <strong> tag is not closed, there should also be </strong> included
-Line 10: <img href=”...”> should be <img src=”...”>
-Line 10: “image 2.jpg” is noted incorrectly, it should be “image_2.jpg
-Line 10: There should also be an “alt=....” included with the img src
-Line 12: “This is a heading </h2>” does not have an initial <h2> tag
-Line 14: “Text </p>” does not have an initial <p> tag 
-Line 15 <this is a comment> is not set up as a comment, should read <!-- this is a comment →
-After Line 15: no closing </body> tag
-Line 16 </htm> must read </html>
+Error 26: Line 4 <h1> body text in the <head> section
+Error 27: After Line 4 No closing </head> tag 
+Error 28: Line 5 <body should be notated as <body>
+Error 29: Line 6 <html> unnecessary, established in line 1
+Error 30: Line 7 <div> is unestablished, no corresponding css and no closure </div>
+Error 31: Line 8 <p> tag is not closed at the end of the line with </p>
+Error 32: Line 8 <strong> tag is not closed, there should also be </strong> included
+Error 33: Line 10 <img href=”...”> should be <img src=”...”>
+Error 34: Line 10 “image 2.jpg” is noted incorrectly, it should be “image_2.jpg
+Error 35: Line 10 There should also be an “alt=....” included with the img src
+Error 36: Line 12 “This is a heading </h2>” does not have an initial <h2> tag
+Error 37: Line 14 “Text </p>” does not have an initial <p> tag 
+Error 38: Line 15 <this is a comment> is not set up as a comment, should read <!-- this is a comment →
+Error 39: After Line 15: no closing </body> tag
+Error 40: Line 16 </htm> must read </html>
