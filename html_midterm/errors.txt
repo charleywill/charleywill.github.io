@@ -1,16 +1,15 @@
 No <!DOCTYPE html> tag
 No <meta charset="UTF-8"> tag
 
-1. No closing </head> tag line 8
-2. No closing </h1> tag line 10
-3. No opneing <p> tag line 12
-4. Closing </li> tag with no opening tag line 20
-5. Ended ordered list with </ul> unordered tag line 25
-6. No closing </p> tag line 27
-7. Image.jpg incorrectly labeled as "Image.png" line 28
-8. Closing </img> tag where closing </a> tag is needed line 30
-9. Missing closing </td> tag line 39
-10. Missing closing </td> tag line 43
+1. No closing </head> tag line 7
+2. No closing </h1> tag line 9
+3. No opneing <p> tag line 10
+4. Closing </li> tag with no opening tag line 19
+5. Ended ordered list with </ul> unordered tag line 24
+6. No closing </p> tag line 26
+7. Image.jpg incorrectly labeled as "Image.png" line 27
+8. Closing </img> tag where closing </a> tag is needed line 29
+9. Missing closing </td> tag line 38
 11. No closing </table> tag line 45
 12. Source instead of src in img tag line 46
 13. Error.jpg incorrectly labeled as "error.jpeg" line 46
