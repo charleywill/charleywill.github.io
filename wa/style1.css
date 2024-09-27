@@ -5,9 +5,8 @@ body {
 }
   
   html {
-    font-family: 'Helvetica neue', Arial, 'sans serif';
-    font-size: 10px;
     background-color: #ccc;
+    font-size: 10px;
   }
   
   .card{
@@ -17,14 +16,25 @@ body {
     background-color: red;
     border: 0.2em solid black;
     border-radius: 1.5em;
+    font-family: 'Helvetica neue', Arial, 'sans serif';
   }
 
-  .card article{
+  .Dugg{
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: #d33cff;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  article{
     height:11em;
     background-color: rgb(0,0,0,0.3);
   }
 
-  .card article p{
+  article p{
     padding:1em;
     color:#ccc;
   }
@@ -34,28 +44,28 @@ body {
     line-height:.5em;
   }
 
-  .card header{
+  header{
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.2), rgba(0,0,0,0));
     border-radius: 1.5em 1.5em 0 0;
   }
 
   
-  .card footer{
+  footer{
     background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.2));
     border-radius: 0 0 1.5em 1.5em;
   }
 
-  .card footer p{
+  footer p{
     font-size: 1.5em;
     line-height:0.25em;
   }
-  
-  .card article img{
+
+  img{
     max-height: 100%;
     float: right;
   }
 
-  .card header, .card footer{
+  header, footer{
     height:3em;
     padding:1em;
   }
