@@ -1,0 +1,52 @@
+body{
+    background-image: url("../img/bellingham.jpg");
+    background-size: cover;
+}
+
+.box{
+    position: relative;
+    height: 5em;
+    width: 20em;
+    background-color: #5676f5;
+    top: 3em;
+    left: 5em;
+    border-width: 0.25em;
+    border-style: solid;
+    border-color: black;
+    border-radius:25%;
+}
+
+.score{
+    position: relative;
+    left: 2.75em;
+    bottom: 3em;
+}
+
+.score p{
+    font-size:30px;
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+}
+
+.logo-img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 0.75em;
+}
+
+.second{
+    position: relative;
+    height: 5em;
+    width: 5em;
+    background-color: blue;
+    top: -5em;
+    left: 88em;
+    border-width: 0.15em;
+    border-style: solid;
+    border-color: black;
+}
+
+.second img{
+    max-height:100%;
+}
+
