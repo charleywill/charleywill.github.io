@@ -1,3 +1,4 @@
+
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
@@ -7,10 +8,10 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
-let insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
-let insertY = ["the soup kitchen", "Disneyland", "the White House"];
-let insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
+let storyText = "It was 90 fahrenheit outside, so :insertx: went down to the pool to cool off. They went to pick up :inserty:, but no store in town had any, then :insertz:. He watched my struggle and was offering help, unfortunately :insertx: weighs 1000 pounds, and couldn't fit us in the car.";
+let insertX = ["Batman", "Alfred", "Cat Woman"];
+let insertY = ["cool drinks", "pineapple", "sunscreen"];
+let insertZ = ["HE arrived", "my friend called me", "a stranger appeared"];
 
 randomize.addEventListener('click', result);
 
@@ -20,25 +21,26 @@ function result() {
     let yItem = randomValueFromArray(insertY);
     let zItem = randomValueFromArray(insertZ);
 
-    newStory.replaceAll(":insertx:", xItem);
-    newStory.replace(":inserty:", yItem);
-    newStory.replace(":insertz:", zItem);
+    newStory = [
+      newStory.replace(':insertx:',xItem).replace(':inserty:',yItem)
+      .replace(':insertz:',zItem).replace(':insertx:',xItem)
+      ];
 
-  if(customName.value !== 'Bob') {
+  if(customName.value !== '') {
     const name = customName.value;
-
+    storyText= storyText.replace('He',name);
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300/14) + ' stone';
-    const temperature =  Math.round((94 - 32) * 5/9) + ' centigrade';
-    newStory.replace("94 fahrenheit", temperature);
-    newStory.replace("300 pounds", weight);
+    const weight = Math.round(300*0.071429) + ' stones';
+    const temperature =  Math.round(((94-32) * 5) /9) + ' centigrade';
+    storyText = storyText.replace('90 fahrenheit', temperature).replace('300 pounds',weight); 
   }
 
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }
+
 
 
 
