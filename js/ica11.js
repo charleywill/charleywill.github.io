@@ -20,3 +20,8 @@ function reverse(number){
     number = number+"";
     return n.split("").reverse().join("");
 }
+
+
+function alphabet_order(str){
+    return str.split('').sort().join('');
+}
