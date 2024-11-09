@@ -21,15 +21,8 @@ for(let i = 0; i < imgNames.length; i++){
 }
 
 /*btn darken*/
-let toggle = false;
 btn.addEventListener('click', () => {
-    if (!toggle) {
-        overlay.style.backgroundColor = rgba(0,0,0,0.8);
-        toggle = true;
-    }
-    else {
-        overlay.style.backgroundColor = rgba(0,0,0,0);
-    }
+    overlay.style.backgroundColor = "grey";
 });
 
 
