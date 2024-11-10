@@ -5,7 +5,7 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const imgNames = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+const imgNames = ['pic6.jpg', 'pic7.jpg', 'pic8.jpg', 'pic9.jpg', 'pic10.jpg'];
 /* Declaring the alternative text for each image file */
 const imgAlts = ["close up eye", "sea foam or a rock", "flowers", "egyptians", "butterfly"];
 
@@ -21,8 +21,17 @@ for(let i = 0; i < imgNames.length; i++){
 }
 
 /*btn darken*/
+let toggle = false;
 btn.addEventListener('click', () => {
-    overlay.style.backgroundColor = "grey";
+    if(!toggle){
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        toggle = true;
+    }
+    else{
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0.0)";
+        toggle = false;
+    }
+    
 });
 
 
