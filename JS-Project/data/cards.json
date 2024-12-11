@@ -1,0 +1,38 @@
+[
+    {
+        "image": "../assets/anchor.jpg",
+        "name": "anchor"
+    },
+    {
+        "image": "../assets/bomb.jpg",
+        "name": "bomb"
+    },
+    {
+        "image": "../assets/island.jpg",
+        "name": "island"
+    },
+    {
+        "image": "../assets/map.jpg",
+        "name": "map"
+    },
+    {
+        "image": "../assets/parrot.jpg",
+        "name": "parrot"
+    },
+    {
+        "image": "../assets/rum.jpg",
+        "name": "rum"
+    },
+    {
+        "image": "../assets/scallywag.jpg",
+        "name": "scallywag"
+    },
+    {
+        "image": "../assets/treasure.jpg",
+        "name": "treasure"
+    },
+    {
+        "image": "../assets/ship.jpg",
+        "name": "ship"
+    }
+]

@@ -1,0 +1,108 @@
+/*background and title*/
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: #12181e;
+  color: white;
+}
+
+/*game title*/
+.play{
+  display: flex;
+  justify-content: center;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.play button {
+  font-family: Arial, sans-serif;
+  padding: 4px 16px;
+  font-size: 40px;
+  border-radius: 10px;
+  background-color: #f9e076;
+  color: #12181e;
+}
+
+/*score*/
+p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  margin:0;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+/*restart button*/
+.actions button {
+  font-family: Arial, sans-serif;
+  padding: 4px 16px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #27ae63;
+  color: white;
+  margin-top:20px;
+}
+
+/*grid of all cards*/
+.grid-container {
+  display: grid;
+  justify-content: center;
+  gap: 16px;
+  grid-template-columns: repeat(6, 140px);
+  grid-template-rows: repeat(2, calc(140px / 2 * 3)); /*ensure number calculated in correct order*/
+  margin-bottom:20px;
+}
+
+/*style cards*/
+.card {
+  height: calc(140px / 2 * 3); /*ensure number calculated in correct order*/
+  width: 140px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  transform-style: preserve-3d; /*internet sourced flip animation*/
+  transition: all 0.5s ease-in-out; /*internet sourced flip animation*/
+}
+
+/*ensure custom images fit on card*/
+.front-image {
+  width: 90px;
+  height: 135px;
+}
+
+/*rotate animation*/
+.card.flipped {
+  transform: rotateY(180deg); /*internet sourced flip animation*/
+}
+
+/*basic card formatting*/
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg); /*internet sourced flip animation*/
+}
+
+/*inital look of cards with deck icon*/
+.card .back {
+  background-color: #1c2951;
+  background-image: url("../assets/card_icon.png");
+  background-position: center center;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+
